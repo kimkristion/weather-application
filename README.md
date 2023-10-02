@@ -13,3 +13,12 @@
 - Search for Weather using the search bar 
 - View the current weather and 5-Day forecast for the city searched as its dynamically displayed on the webpage
 - Access previously searched cities by clicking on the list of cities under on the left-hand side of the application
+
+https://kimkristion.github.io/weather-application/
+![Deployed Webpage](<./images/deployedwebpage.png>)
+
+## Credits
+- N/A
+
+## License 
+- No license provided
