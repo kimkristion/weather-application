@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+nav {
+    background: linear-gradient(to right, #3944bc, #0a1172);
+    text-align: center;
+    padding: .5rem;
+}
+
+nav h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.columns {
+    margin: 1rem;
+    width: min(90%, 75rem);
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.citysearch {
+    display: flex;
+    flex-direction: column;
+}
+
+.citysearch input {
+    padding: 5px;
+}
+
+#searchBtn {
+    border-radius: 5px;
+    padding: 5px;
+    background-color:#3944bc;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+
+}
+
+#clearSearchBtn {
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    margin-top: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+li {
+    background-color: grey;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#deleteBtn {
+    color: red;
+    float: right;
+    background-color: #f44336; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    width: 5%;
+    margin: none;
+}
+
+.forecastContainer {
+    display: flex;
+}
+
+.forecastCard {
+    color: white;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 10rem;
+    background:linear-gradient(to right, #3944bc, #0a1172);
+}
+
+.forecastContent {
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+
+
+#deleteBtn:hover {
+    border: 2px solid black;
+}
+
+li:hover #deleteBtn{
+    display: block;
+}
+
+.citycontainer {
+    border: 1px solid black;
+    margin-left: 1rem;
+    height: 35%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.forecast {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
