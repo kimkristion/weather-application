@@ -8,7 +8,7 @@ const clearSearchBtn = document.getElementById('clearSearchBtn');
 // Function to fetch weather data with the paramater of city
 function fetchWeatherData(city) {
     // Contructs the specific URL for the fetch which includes the city referenced
-    const baseURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKey}`;
+    const baseURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKey}`;
 
     // Returns the data parsed as JSON
     return fetch(baseURL)
@@ -32,7 +32,7 @@ function displayWeatherData(weatherdata) {
 
     // Grabs the relevant weather icon
     var weatherIconCode = weatherdata.weather[0].icon;
-    var fetchWeatherIcon = `http://openweathermap.org/img/w/${weatherIconCode}.png`;
+    var fetchWeatherIcon = `https://openweathermap.org/img/w/${weatherIconCode}.png`;
 
     // Updates the displayed weather information 
     displayCityName.textContent = weatherdata.name;
@@ -46,7 +46,7 @@ function displayWeatherData(weatherdata) {
     const lon = weatherdata.coord.lon;
 
     // Contructs API endpoint ULR for the 5-Day Forecast
-    const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${APIKey}`;
+    const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${APIKey}`;
     fetch(forecastURL)
     .then(response => response.json())
     .then(data => {
@@ -59,7 +59,7 @@ function displayWeatherData(weatherdata) {
             const wind = forecast.wind.speed;
             const humidity = forecast.main.humidity;
             var weatherIconCode = forecast.weather[0].icon;
-            var fetchWeatherIcon = `http://openweathermap.org/img/w/${weatherIconCode}.png`;
+            var fetchWeatherIcon = `https://openweathermap.org/img/w/${weatherIconCode}.png`;
 
             // Toggle HTML elements in acsending order stoppping that 5
             const grabTempId = `temp${index + 1}`;
