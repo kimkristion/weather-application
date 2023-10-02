@@ -1,3 +1,4 @@
+
 const APIKey = "278f3553f0664bd192230bfbcfafa765";
 const searchBtn = document.getElementById('searchBtn');
 const clearSearchBtn = document.getElementById('clearSearchBtn');

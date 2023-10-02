@@ -8,13 +8,13 @@ body {
     font-family: 'Pathway Gothic One', sans-serif;
 }
 
-nav {
+header {
     background: linear-gradient(to right, #3944bc, #0a1172);
     text-align: center;
     padding: .5rem;
 }
 
-nav h1 {
+header h1 {
     color: white;
     font-size: 3.5rem;
 }
